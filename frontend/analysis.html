@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命盘分析结果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container analysis-page">
+        <!-- 返回按钮 -->
+        <div class="back-nav">
+            <a href="index.html" class="btn-back">← 返回主页</a>
+        </div>
+
+        <!-- 加载提示 -->
+        <div id="loadingIndicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <p>正在加载分析结果...</p>
+        </div>
+
+        <!-- 分析结果容器 -->
+        <div id="analysisContent" style="display: none;">
+            <!-- 基本信息卡片 -->
+            <section class="basic-info-card">
+                <h1 class="card-title">命主信息</h1>
+                <div id="basicInfo" class="basic-info-grid">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 命盘格局总论 -->
+            <section class="overall-section">
+                <h2 class="section-title">命盘格局总论</h2>
+                <div id="overallAnalysis" class="overall-content">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 十二宫位分析 -->
+            <section class="palaces-section">
+                <h2 class="section-title">十二宫位详解</h2>
+                <div class="palaces-container">
+                    <!-- 左侧：宫位可视化 -->
+                    <div class="palace-chart">
+                        <canvas id="palaceCanvas" width="500" height="500"></canvas>
+                    </div>
+                    
+                    <!-- 右侧：宫位详细分析 -->
+                    <div class="palace-details">
+                        <div id="palaceAnalysis" class="palace-list">
+                            <!-- 动态加载 -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 流年运势 -->
+            <section class="fortune-section">
+                <h2 class="section-title">流年运势</h2>
+                <div id="yearlyFortune" class="fortune-timeline">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 关键事件 -->
+            <section class="events-section">
+                <h2 class="section-title">关键事件提示</h2>
+                <div id="keyEvents" class="key-events">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 专项分析 -->
+            <section class="special-section">
+                <h2 class="section-title">专项深度分析</h2>
+                <div id="specialAnalysis" class="special-grid">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 化解建议 -->
+            <section class="suggestions-section">
+                <h2 class="section-title">化解建议与开运指南</h2>
+                <div id="suggestions" class="suggestions-content">
+                    <!-- 动态加载 -->
+                </div>
+            </section>
+
+            <!-- 免责声明 -->
+            <section class="disclaimer">
+                <p>⚠️ 以上分析仅限于研究或娱乐目的使用，不构成任何专业建议。人生命运掌握在自己手中，请理性看待。</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/visualizer.js"></script>
+    <script src="js/analysis.js"></script>
+</body>
+</html>

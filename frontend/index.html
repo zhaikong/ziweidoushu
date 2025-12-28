@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紫微斗数命盘分析系统</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 页面头部 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="title-icon">☯</span>
+                    紫微斗数命盘分析系统
+                    <span class="title-icon">☯</span>
+                </h1>
+                <p class="subtitle">文墨天机 · 洞察命理玄机</p>
+            </div>
+        </header>
+
+        <!-- 主要内容区 -->
+        <main class="main-content">
+            <!-- 新建分析区域 -->
+            <section class="new-analysis-section">
+                <h2 class="section-title">新建命盘分析</h2>
+                <div class="input-area">
+                    <div class="form-group">
+                        <label for="clientName">案主姓名：</label>
+                        <input type="text" id="clientName" placeholder="请输入案主姓名（选填）">
+                    </div>
+                    <div class="form-group">
+                        <label for="chartText">命盘数据：</label>
+                        <textarea 
+                            id="chartText" 
+                            placeholder="请粘贴文墨天机紫微斗数命盘文本数据..."
+                            rows="15"
+                        ></textarea>
+                    </div>
+                    <button id="analyzeBtn" class="btn-primary">
+                        <span class="btn-icon">✨</span>
+                        开始分析
+                    </button>
+                    <p class="helper-text">生成内容包含专业分析 + 白话解读 + 推算依据，便于快速理解。</p>
+                    <div id="loadingMsg" class="loading-msg" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>正在分析命盘，请稍候...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 历史记录区域 -->
+            <section class="history-section">
+                <h2 class="section-title">历史分析记录</h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="搜索案主姓名...">
+                    <button id="refreshBtn" class="btn-secondary">刷新</button>
+                </div>
+                <div id="historyList" class="history-list">
+                    <!-- 动态加载历史记录 -->
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>本系统仅供研究和娱乐使用，不构成任何专业建议</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
