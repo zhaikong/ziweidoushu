@@ -2,7 +2,7 @@
  * 分析结果页面逻辑
  */
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = '/api';
 
 // 获取URL参数
 const urlParams = new URLSearchParams(window.location.search);
