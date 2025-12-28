@@ -2,7 +2,7 @@
  * 主页交互逻辑
  */
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = '/api';
 
 // DOM元素
 const analyzeBtn = document.getElementById('analyzeBtn');

@@ -1,13 +1,17 @@
 {
   "name": "ziwei-analysis-backend",
   "version": "1.0.0",
-  "description": "紫微斗数命盘分析系统后端",
+  "description": "\u7d2b\u5fae\u6597\u6570\u547d\u76d8\u5206\u6790\u7cfb\u7edf\u540e\u7aef",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node init && node server.js",
+    "dev": "node init && nodemon server.js"
   },
-  "keywords": ["ziwei", "astrology", "analysis"],
+  "keywords": [
+    "ziwei",
+    "astrology",
+    "analysis"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
